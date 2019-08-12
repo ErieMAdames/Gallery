@@ -27,6 +27,7 @@ if ($current_user == NULL) {
             <li>
                 <a href="">My Pictures</a>
             </li>
+
             <?php
             } else {
             echo("<h1>John Doe</h1>");
@@ -34,6 +35,9 @@ if ($current_user == NULL) {
             <ul>
                 <li>
                     <a href="../">Sign In</a>
+                </li>
+                <li>
+                    <a href="../addpictures">Add Pictures</a>
                 </li>
                 <?php
                 }
@@ -48,12 +52,12 @@ if ($current_user == NULL) {
                 if ($current_user) {
                     ?>
                     <li>
-                        <a href="../addpictures">Add Pictures</a>
-                    </li>
-                    <li>
                         <a href="../logout.php">Log out</a>
                     </li>
-                <?php } ?>
+                <?php } else { ?>
+                    <li>
+                        <a href="../">Sign In</a>
+                    </li> <?php } ?>
             </ul>
     </nav>
 </header>

@@ -27,9 +27,6 @@ include('../includes/init.php'); ?>
             echo("<h1>John Doe</h1>");
             ?>
             <ul>
-                <li>
-                    <a href="../">Sign In</a>
-                </li>
                 <?php
                 }
                 ?>
@@ -48,7 +45,10 @@ include('../includes/init.php'); ?>
                     <li>
                         <a href="../logout.php">Log out</a>
                     </li>
-                <?php } ?>
+                <?php } else { ?>
+                    <li>
+                        <a href="../">Sign In</a>
+                    </li> <?php } ?>
             </ul>
     </nav>
 </header>

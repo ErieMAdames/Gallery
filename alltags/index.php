@@ -22,14 +22,14 @@ include('../includes/init.php'); ?>
             <li>
                 <a href="../mypictures">My Pictures</a>
             </li>
+            <li>
+                <a href="../addpictures">Add Pictures</a>
+            </li>
             <?php
             } else {
             echo("<h1>John Doe</h1>");
             ?>
             <ul>
-                <li>
-                    <a href="../">Sign In</a>
-                </li>
                 <?php
                 }
                 ?>
@@ -48,7 +48,10 @@ include('../includes/init.php'); ?>
                     <li>
                         <a href="../logout.php">Log out</a>
                     </li>
-                <?php } ?>
+                <?php }  else { ?>
+                    <li>
+                        <a href="../">Sign In</a>
+                    </li> <?php } ?>
             </ul>
     </nav>
 </header>
@@ -124,7 +127,7 @@ include('../includes/init.php'); ?>
                 if ($tags) {
                     foreach ($tags as $tag) {
                         $t = $tag['tag'];
-                        echo("<div class = 'tagblock'><h4><a id = 'tags' href = 'alltags?tag=$t'>$t</a></h4></div>");
+                        echo("<div class = 'tagblock'><h4><a id = 'tags' href = '?tag=$t'>$t</a></h4></div>");
                     }
                 } else {
                     echo("<h4>No tags matching search word.<h4>");

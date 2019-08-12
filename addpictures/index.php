@@ -14,7 +14,7 @@ include('../includes/init.php');
 </head>
 <?php
 if ($current_user == NULL) {
-    header('location: main.php');
+    header('location: ../main');
 }
 const BOX_UPLOADS_PATH = "../uploads/pictures/";
 if (isset($_POST["upload"]) and $current_user) {
@@ -71,15 +71,15 @@ if (isset($_POST["upload"]) and $current_user) {
         <ul>
             <li>
                 <a href="../mypictures">My Pictures</a>
+                <li>
+                    <a href="">Add Pictures</a>
+                </li>
             </li>
             <?php
             } else {
             echo("<h1>John Doe</h1>");
             ?>
             <ul>
-                <li>
-                    <a href="../">Sign In</a>
-                </li>
                 <?php
                 }
                 ?>
@@ -98,7 +98,10 @@ if (isset($_POST["upload"]) and $current_user) {
                     <li>
                         <a href="../logout.php">Log out</a>
                     </li>
-                <?php } ?>
+                <?php } else { ?>
+                    <li>
+                        <a href="../">Sign In</a>
+                    </li> <?php } ?>
             </ul>
     </nav>
 </header>
@@ -149,7 +152,7 @@ else{ ?>
             <input type="file" name="upic" required>
         </li>
         <li>
-            <button name="upload" type="submit">Upload</button>
+            <button id = "buttonbutton" name="upload" type="submit">Upload</button>
         </li>
     </ul>
     <?php } ?>

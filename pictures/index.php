@@ -80,9 +80,9 @@ if ($picture['first_name']) {
             } else {
             echo("<h1>John Doe</h1>");
             ?>
-            <ul>
+            <ul>]
                 <li>
-                    <a href="../">Sign In</a>
+                    <a href="../addpictures">Add Pictures</a>
                 </li>
                 <?php
                 }
@@ -102,7 +102,10 @@ if ($picture['first_name']) {
                     <li>
                         <a href="../logout.php">Log out</a>
                     </li>
-                <?php } ?>
+                <?php } else { ?>
+                    <li>
+                        <a href="../">Sign In</a>
+                    </li> <?php } ?>
             </ul>
     </nav>
 </header>
