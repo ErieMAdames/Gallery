@@ -56,7 +56,7 @@ function print_messages()
 if ($page == "base") {
     $db = open_or_init_sqlite_db("gallery.sqlite", "init/init.sql");
 } else {
-    $db = open_or_init_sqlite_db("../gallery.sqlite", "../init/init.sql");
+    $db = open_or_init_sqlite_db("https://radiant-citadel-46031.herokuapp.com/gallery.sqlite", "https://radiant-citadel-46031.herokuapp.com/init/init.sql");
 }
 $redirect = FALSE;
 function check_login()

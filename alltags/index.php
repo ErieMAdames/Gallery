@@ -8,7 +8,7 @@ include('../includes/init.php'); ?>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="../css/style.css" media="all"/>
+    <link rel="stylesheet" type="text/css" href="https://radiant-citadel-46031.herokuapp.com/css/style.css" media="all"/>
 
     <title>Home</title>
 </head>
@@ -23,7 +23,7 @@ include('../includes/init.php'); ?>
             <i class="fa fa-bars"></i>
         </a>
         <div id="myLinks">
-            <a href="../mypictures">My Pictures</a>
+            <a href="https://radiant-citadel-46031.herokuapp.com/mypictures">My Pictures</a>
             <?php
             } else { ?>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -34,15 +34,15 @@ include('../includes/init.php'); ?>
                 <?php
                 }
                 ?>
-                <a href="../main">All Pictures</a>
-                <a href="../alltags">All Tags</a>
+                <a href="https://radiant-citadel-46031.herokuapp.com/main">All Pictures</a>
+                <a href="https://radiant-citadel-46031.herokuapp.com/alltags">All Tags</a>
                 <?php
                 if ($current_user) {
                     ?>
-                    <a href="../addpictures">Add Pictures</a>
-                    <a href="../logout.php">Log out</a>
+                    <a href="https://radiant-citadel-46031.herokuapp.com/addpictures">Add Pictures</a>
+                    <a href="https://radiant-citadel-46031.herokuapp.com/logout.php">Log out</a>
                 <?php } else { ?>
-                    <a href="../">Sign In</a><?php } ?>
+                    <a href="https://radiant-citadel-46031.herokuapp.com/">Sign In</a><?php } ?>
             </div>
             <script>
                 function myFunction() {
@@ -62,7 +62,7 @@ include('../includes/init.php'); ?>
         ?>
         <ul>
             <li>
-                <a href="../mypictures">My Pictures</a>
+                <a href="https://radiant-citadel-46031.herokuapp.com/mypictures">My Pictures</a>
             </li>
             <?php
             } else {
@@ -73,7 +73,7 @@ include('../includes/init.php'); ?>
                 }
                 ?>
                 <li>
-                    <a href="../main">All Pictures</a>
+                    <a href="https://radiant-citadel-46031.herokuapp.com/main">All Pictures</a>
                 </li>
                 <li>
                     <a href="">All Tags</a>
@@ -82,14 +82,14 @@ include('../includes/init.php'); ?>
                 if ($current_user) {
                     ?>
                     <li>
-                        <a href="../addpictures">Add Pictures</a>
+                        <a href="https://radiant-citadel-46031.herokuapp.com/addpictures">Add Pictures</a>
                     </li>
                     <li>
-                        <a href="../logout.php">Log out</a>
+                        <a href="https://radiant-citadel-46031.herokuapp.com/logout.php">Log out</a>
                     </li>
                 <?php } else { ?>
                     <li>
-                        <a href="../">Sign In</a>
+                        <a href="https://radiant-citadel-46031.herokuapp.com/">Sign In</a>
                     </li> <?php } ?>
             </ul>
     </nav>
@@ -109,7 +109,7 @@ include('../includes/init.php'); ?>
         <?php } ?>
     </div>
     <div id="search">
-        <form action="" method="get">
+        <form action="https://radiant-citadel-46031.herokuapp.com/alltags" method="get">
             <label>Search tags:<label>
                     <input type="text" name="search"/>
                     <button name="Search" type="submit">Search</button>
@@ -166,7 +166,7 @@ include('../includes/init.php'); ?>
                 if ($tags) {
                     foreach ($tags as $tag) {
                         $t = $tag['tag'];
-                        echo("<div class = 'tagblock'><h4><a id = 'tags' href = '?tag=$t'>$t</a></h4></div>");
+                        echo("<div class = 'tagblock'><h4><a id = 'tags' href = 'https://radiant-citadel-46031.herokuapp.com/alltags?tag=$t'>$t</a></h4></div>");
                     }
                 } else {
                     echo("<h4>No tags matching search word.<h4>");
@@ -177,7 +177,7 @@ include('../includes/init.php'); ?>
                 $tags = exec_sql_query($db, $sql, $params);
                 foreach ($tags as $tag) {
                     $t = $tag['tag'];
-                    echo("<div class = 'tagblock'><h4><a id = 'tags' href = '?tag=$t'>$t</a></h4></div>");
+                    echo("<div class = 'tagblock'><h4><a id = 'tags' href = 'https://radiant-citadel-46031.herokuapp.com/alltags?tag=$t'>$t</a></h4></div>");
                 }
             }
             ?>

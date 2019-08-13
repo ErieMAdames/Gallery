@@ -1,6 +1,6 @@
 <?php
 $page = "base";
-include('includes/init.php');
+include('https://radiant-citadel-46031.herokuapp.com/includes/init.php');
 if (($_POST['user_id'] == $userid) and ($_POST['deletetag'] == 'deletetag')) {
     $id = filter_input(INPUT_POST, "picid", FILTER_SANITIZE_STRING);
     $tag = filter_input(INPUT_POST, "tag", FILTER_SANITIZE_STRING);
@@ -32,7 +32,7 @@ if (($_POST['user_id'] == $userid) and ($_POST['deletetag'] == 'deletetag')) {
             exec_sql_query($db, $sql, $params);
         }
     }
-    header("location: pictures?id=$id&title=$title");
+    header("location: https://radiant-citadel-46031.herokuapp.com/pictures?id=$id&title=$title");
 } else if (($_POST['user_id'] == $userid) and ($_POST['deletepic'] == 'deletepic')) {
     $user = $_POST['user_id'];
     $id = $_POST['picid'];
@@ -89,8 +89,8 @@ if (($_POST['user_id'] == $userid) and ($_POST['deletetag'] == 'deletetag')) {
         }
     }
     unlink("$picpath");
-    header('location: mypictures');
+    header('location: https://radiant-citadel-46031.herokuapp.com/mypictures');
 } else {
-    header('location: mypictures');
+    header('location: https://radiant-citadel-46031.herokuapp.com/mypictures');
 }
 ?>

@@ -8,13 +8,13 @@ include('../includes/init.php'); ?>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="../css/style.css" media="all"/>
+    <link rel="stylesheet" type="text/css" href="https://radiant-citadel-46031.herokuapp.com/css/style.css" media="all"/>
 
     <title>Home</title>
 </head>
 <?php
 if ($current_user == NULL) {
-    header('location: ../main');
+    header('location: https://radiant-citadel-46031.herokuapp.com/main');
 }
 ?>
 <body>
@@ -28,7 +28,7 @@ if ($current_user == NULL) {
             <i class="fa fa-bars"></i>
         </a>
         <div id="myLinks">
-            <a href="../mypictures">My Pictures</a>
+            <a href="https://radiant-citadel-46031.herokuapp.com/mypictures">My Pictures</a>
             <?php
             } else { ?>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -39,15 +39,15 @@ if ($current_user == NULL) {
                 <?php
                 }
                 ?>
-                <a href="../main">All Pictures</a>
-                <a href="../alltags">All Tags</a>
+                <a href="https://radiant-citadel-46031.herokuapp.com/main">All Pictures</a>
+                <a href="https://radiant-citadel-46031.herokuapp.com/alltags">All Tags</a>
                 <?php
                 if ($current_user) {
                     ?>
-                    <a href="../addpictures">Add Pictures</a>
-                    <a href="../logout.php">Log out</a>
+                    <a href="https://radiant-citadel-46031.herokuapp.com/addpictures">Add Pictures</a>
+                    <a href="https://radiant-citadel-46031.herokuapp.com/logout.php">Log out</a>
                 <?php } else { ?>
-                    <a href="../">Sign In</a><?php } ?>
+                    <a href="https://radiant-citadel-46031.herokuapp.com/">Sign In</a><?php } ?>
             </div>
             <script>
                 function myFunction() {
@@ -67,7 +67,7 @@ if ($current_user == NULL) {
         ?>
         <ul>
             <li>
-                <a href="../mypictures">My Pictures</a>
+                <a href="https://radiant-citadel-46031.herokuapp.com/mypictures">My Pictures</a>
             </li>
 
             <?php
@@ -76,29 +76,29 @@ if ($current_user == NULL) {
             ?>
             <ul>
                 <li>
-                    <a href="../">Sign In</a>
+                    <a href="https://radiant-citadel-46031.herokuapp.com/">Sign In</a>
                 </li>
                 <?php
                 }
                 ?>
                 <li>
-                    <a href="../main">All Pictures</a>
+                    <a href="https://radiant-citadel-46031.herokuapp.com/main">All Pictures</a>
                 </li>
                 <li>
-                    <a href="../alltags">All Tags</a>
+                    <a href="https://radiant-citadel-46031.herokuapp.com/alltags">All Tags</a>
                 </li>
                 <?php
                 if ($current_user) {
                     ?>
                     <li>
-                        <a href="../addpictures">Add Pictures</a>
+                        <a href="https://radiant-citadel-46031.herokuapp.com/addpictures">Add Pictures</a>
                     </li>
                     <li>
-                        <a href="../logout.php">Log out</a>
+                        <a href="https://radiant-citadel-46031.herokuapp.com/logout.php">Log out</a>
                     </li>
                 <?php } else { ?>
                     <li>
-                        <a href="../">Sign In</a>
+                        <a href="https://radiant-citadel-46031.herokuapp.com/">Sign In</a>
                     </li> <?php } ?>
             </ul>
     </nav>

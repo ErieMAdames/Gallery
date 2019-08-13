@@ -9,15 +9,15 @@ include('../includes/init.php');
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="../css/style.css" media="all"/>
+    <link rel="stylesheet" type="text/css" href="https://radiant-citadel-46031.herokuapp.com/css/style.css" media="all"/>
 
     <title>Home</title>
 </head>
 <?php
 if ($current_user == NULL) {
-    header('location: ../main');
+    header('location: https://radiant-citadel-46031.herokuapp.com/main');
 }
-const BOX_UPLOADS_PATH = "../uploads/pictures/";
+const BOX_UPLOADS_PATH = "https://radiant-citadel-46031.herokuapp.com/uploads/pictures/";
 if (isset($_POST["upload"]) and $current_user) {
     $bfile_info = $_FILES["upic"];
     $title = filter_input(INPUT_POST, "title", FILTER_SANITIZE_STRING);
@@ -73,7 +73,7 @@ if (isset($_POST["upload"]) and $current_user) {
             <i class="fa fa-bars"></i>
         </a>
         <div id="myLinks">
-            <a href="../mypictures">My Pictures</a>
+            <a href="https://radiant-citadel-46031.herokuapp.com/mypictures">My Pictures</a>
             <?php
             } else { ?>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -84,15 +84,15 @@ if (isset($_POST["upload"]) and $current_user) {
                 <?php
                 }
                 ?>
-                <a href="../main">All Pictures</a>
-                <a href="../alltags">All Tags</a>
+                <a href="https://radiant-citadel-46031.herokuapp.com/main">All Pictures</a>
+                <a href="https://radiant-citadel-46031.herokuapp.com/alltags">All Tags</a>
                 <?php
                 if ($current_user) {
                     ?>
-                    <a href="../addpictures">Add Pictures</a>
-                    <a href="../logout.php">Log out</a>
+                    <a href="https://radiant-citadel-46031.herokuapp.com/addpictures">Add Pictures</a>
+                    <a href="https://radiant-citadel-46031.herokuapp.com/logout.php">Log out</a>
                 <?php } else { ?>
-                    <a href="../">Sign In</a><?php } ?>
+                    <a href="https://radiant-citadel-46031.herokuapp.com/">Sign In</a><?php } ?>
             </div>
             <script>
                 function myFunction() {
@@ -112,7 +112,7 @@ if (isset($_POST["upload"]) and $current_user) {
         ?>
         <ul>
             <li>
-                <a href="../mypictures">My Pictures</a>
+                <a href="https://radiant-citadel-46031.herokuapp.com/mypictures">My Pictures</a>
             </li>
             <?php
             } else {
@@ -123,23 +123,23 @@ if (isset($_POST["upload"]) and $current_user) {
                 }
                 ?>
                 <li>
-                    <a href="../main">All Pictures</a>
+                    <a href="https://radiant-citadel-46031.herokuapp.com/main">All Pictures</a>
                 </li>
                 <li>
-                    <a href="../alltags">All Tags</a>
+                    <a href="https://radiant-citadel-46031.herokuapp.com/alltags">All Tags</a>
                 </li>
                 <?php
                 if ($current_user) {
                     ?>
                     <li>
-                        <a href="../addpictures">Add Pictures</a>
+                        <a href="https://radiant-citadel-46031.herokuapp.com/addpictures">Add Pictures</a>
                     </li>
                     <li>
-                        <a href="../logout.php">Log out</a>
+                        <a href="https://radiant-citadel-46031.herokuapp.com/logout.php">Log out</a>
                     </li>
                 <?php } else { ?>
                     <li>
-                        <a href="../">Sign In</a>
+                        <a href="https://radiant-citadel-46031.herokuapp.com">Sign In</a>
                     </li> <?php } ?>
             </ul>
     </nav>
@@ -172,7 +172,7 @@ elseif ($bfile_info["error"] == 1) {
     echo("<h3>File Size too large, click <a href = ''>here</a> to try again.</h3>");
 }
 else{ ?>
-<form id="addpicture" action="" method="post" enctype="multipart/form-data">
+<form id="addpicture" action="https://radiant-citadel-46031.herokuapp.com/addpictures" method="post" enctype="multipart/form-data">
     <ul>
         <li>
             <label>Title:</label>
