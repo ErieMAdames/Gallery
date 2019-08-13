@@ -177,7 +177,7 @@ include('../includes/init.php'); ?>
                 $tags = exec_sql_query($db, $sql, $params);
                 foreach ($tags as $tag) {
                     $t = $tag['tag'];
-                    echo("<div class = 'tagblock'><h4><a id = 'tags' href = 'alltags?tag=$t'>$t</a></h4></div>");
+                    echo("<div class = 'tagblock'><h4><a id = 'tags' href = '?tag=$t'>$t</a></h4></div>");
                 }
             }
             ?>
