@@ -8,7 +8,7 @@ include('../includes/init.php'); ?>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="https://radiant-citadel-46031.herokuapp.com/css/style.css" media="all"/>
+    <link rel="stylesheet" type="text/css" href="../css/style.css" media="all"/>
 
     <title>Home</title>
 </head>
@@ -59,7 +59,7 @@ if (isset($_GET['id']) and isset($_GET['title'])) {
         $tags[$tag['tag']] = $tag['tagid'];
     }
 } else {
-    header('location: https://radiant-citadel-46031.herokuapp.com/main');
+    header('location: ../main');
 }
 if ($picture['first_name']) {
     $author = $picture['first_name'] . " " . $picture['last_name'];
@@ -77,7 +77,7 @@ if ($picture['first_name']) {
             <i class="fa fa-bars"></i>
         </a>
         <div id="myLinks">
-            <a href="https://radiant-citadel-46031.herokuapp.com/mypictures">My Pictures</a>
+            <a href="../mypictures">My Pictures</a>
             <?php
             } else { ?>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -88,15 +88,15 @@ if ($picture['first_name']) {
                 <?php
                 }
                 ?>
-                <a href="https://radiant-citadel-46031.herokuapp.com/main">All Pictures</a>
-                <a href="https://radiant-citadel-46031.herokuapp.com/alltags">All Tags</a>
+                <a href="../main">All Pictures</a>
+                <a href="../alltags">All Tags</a>
                 <?php
                 if ($current_user) {
                     ?>
-                    <a href="https://radiant-citadel-46031.herokuapp.com/addpictures">Add Pictures</a>
-                    <a href="https://radiant-citadel-46031.herokuapp.com/logout.php">Log out</a>
+                    <a href="../addpictures">Add Pictures</a>
+                    <a href="../logout.php">Log out</a>
                 <?php } else { ?>
-                    <a href="https://radiant-citadel-46031.herokuapp.com/">Sign In</a><?php } ?>
+                    <a href="../">Sign In</a><?php } ?>
             </div>
             <script>
                 function myFunction() {
@@ -116,7 +116,7 @@ if ($picture['first_name']) {
         ?>
         <ul>
             <li>
-                <a href="https://radiant-citadel-46031.herokuapp.com/mypictures">My Pictures</a>
+                <a href="../mypictures">My Pictures</a>
             </li>
             <?php
             } else {
@@ -124,29 +124,29 @@ if ($picture['first_name']) {
             ?>
             <ul>]
                 <li>
-                    <a href="https://radiant-citadel-46031.herokuapp.com/addpictures">Add Pictures</a>
+                    <a href="../addpictures">Add Pictures</a>
                 </li>
                 <?php
                 }
                 ?>
                 <li>
-                    <a href="https://radiant-citadel-46031.herokuapp.com/main">All Pictures</a>
+                    <a href="../main">All Pictures</a>
                 </li>
                 <li>
-                    <a href="https://radiant-citadel-46031.herokuapp.com/alltags">All Tags</a>
+                    <a href="../alltags">All Tags</a>
                 </li>
                 <?php
                 if ($current_user) {
                     ?>
                     <li>
-                        <a href="https://radiant-citadel-46031.herokuapp.com/addpictures">Add Pictures</a>
+                        <a href="../addpictures">Add Pictures</a>
                     </li>
                     <li>
-                        <a href="https://radiant-citadel-46031.herokuapp.com/logout.php">Log out</a>
+                        <a href="../logout.php">Log out</a>
                     </li>
                 <?php } else { ?>
                     <li>
-                        <a href="https://radiant-citadel-46031.herokuapp.com/">Sign In</a>
+                        <a href="../">Sign In</a>
                     </li> <?php } ?>
             </ul>
     </nav>
@@ -172,7 +172,7 @@ if ($picture['first_name']) {
     echo("<div id = 'usertags'><div id = 'usertags_in'><img src='$path' alt='$title'></div><div class = 'usertags_in'>");
     if (($userid == $user) and isset($userid) and isset($user)) {
         foreach ($tags as $tag => $tagid) { ?>
-            <form class="dtag" action="https://radiant-citadel-46031.herokuapp.com/delete.php" method="post">
+            <form class="dtag" action="delete.php" method="post">
                 <input type="hidden" name="user_id" value="<?php echo($userid); ?>"/>
                 <input type="hidden" name="picid" value="<?php echo($id); ?>"/>
                 <input type="hidden" name="tag" value="<?php echo($tag); ?>"/>
@@ -198,7 +198,7 @@ if ($picture['first_name']) {
     $title = $picture['title'];
     $linktitle = explode(' ', $title);
     $linktitle = implode('%20', $linktitle);
-    echo("<div class = 'usertags'><form class = 'addtags' action = 'https://radiant-citadel-46031.herokuapp.com/pictures?id=$id&title=$linktitle' method = 'post'>");
+    echo("<div class = 'usertags'><form class = 'addtags' action = '?id=$id&title=$linktitle' method = 'post'>");
     ?>
     <div class='addlabel'>
         <label>Add Tags:</label>
@@ -214,7 +214,7 @@ if ($picture['first_name']) {
 if (($userid == $user) and isset($userid) and isset($user)) {
     ?>
     <div class="deleteform">
-    <form action="https://radiant-citadel-46031.herokuapp.com/delete.php" method="post">
+    <form action="delete.php" method="post">
         <input type="hidden" name="user_id" value="<?php echo($userid); ?>"/>
         <input type="hidden" name="picid" value="<?php echo($id); ?>"/>
         <input type="hidden" name="pictitle" value="<?php echo($title); ?>"/>
