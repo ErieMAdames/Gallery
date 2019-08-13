@@ -28,7 +28,7 @@ if ($current_user == NULL) {
             <i class="fa fa-bars"></i>
         </a>
         <div id="myLinks">
-            <a href="">My Pictures</a>
+            <a href="../mypictures">My Pictures</a>
             <?php
             } else { ?>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -67,7 +67,7 @@ if ($current_user == NULL) {
         ?>
         <ul>
             <li>
-                <a href="">My Pictures</a>
+                <a href="../mypictures">My Pictures</a>
             </li>
 
             <?php

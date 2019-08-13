@@ -34,7 +34,7 @@ include('../includes/init.php'); ?>
                 <?php
                 }
                 ?>
-                <a href="">All Pictures</a>
+                <a href="../main">All Pictures</a>
                 <a href="../alltags">All Tags</a>
                 <?php
                 if ($current_user) {
@@ -73,7 +73,7 @@ include('../includes/init.php'); ?>
                 }
                 ?>
                 <li>
-                    <a href="">All Pictures</a>
+                    <a href="../main">All Pictures</a>
                 </li>
                 <li>
                     <a href="../alltags">All Tags</a>

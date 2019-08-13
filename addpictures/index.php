@@ -89,7 +89,7 @@ if (isset($_POST["upload"]) and $current_user) {
                 <?php
                 if ($current_user) {
                     ?>
-                    <a href="">Add Pictures</a>
+                    <a href="../addpictures">Add Pictures</a>
                     <a href="../logout.php">Log out</a>
                 <?php } else { ?>
                     <a href="../">Sign In</a><?php } ?>
@@ -132,7 +132,7 @@ if (isset($_POST["upload"]) and $current_user) {
                 if ($current_user) {
                     ?>
                     <li>
-                        <a href="">Add Pictures</a>
+                        <a href="../addpictures">Add Pictures</a>
                     </li>
                     <li>
                         <a href="../logout.php">Log out</a>

@@ -35,7 +35,7 @@ include('../includes/init.php'); ?>
                 }
                 ?>
                 <a href="../main">All Pictures</a>
-                <a href="">All Tags</a>
+                <a href="../alltags">All Tags</a>
                 <?php
                 if ($current_user) {
                     ?>
