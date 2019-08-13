@@ -51,24 +51,6 @@ a:active {
     margin-right: 10vw;
 }
 
-.block {
-    display: inline-block;
-    padding: 1vw;
-    min-width: 20vw;
-    max-width: 20vw;
-    min-height: 25vw;
-    max-height: 25vw;
-    vertical-align: top;
-}
-
-.block img {
-    max-height: 20vw;
-    max-width: 20vw;;
-}
-
-.block img:hover {
-    opacity: .8;
-}
 
 #nav {
     display: inline;
@@ -98,27 +80,6 @@ a:active {
     padding-right: 1%;
     border-left: solid;
     border-width: 1px;
-}
-
-#usertags {
-    width: 70%;
-    margin-left: 15%;
-    margin-right: 15%;
-}
-
-#usertags img {
-    display: block;
-    margin: auto;
-    max-width: 100%;
-    max-height: 80vh;
-}
-
-#usertags_in {
-    display: inline;
-}
-
-#usertags_in img {
-    margin-bottom: 5%;
 }
 
 .dtag {
@@ -177,6 +138,7 @@ header {
     #nav {
         display: none;
     }
+
     #myLinks {
         display: none;
     }
@@ -194,10 +156,87 @@ header {
         display: block;
         padding-left: 3%;
     }
+
+    .block {
+        display: inline;
+        padding: 1vw;
+        vertical-align: top;
+    }
+
+    .block img {
+        max-width: 100%;
+    }
+
+    .block img:hover {
+        opacity: .8;
+    }
+
+    #usertags {
+        width: 100%;
+    }
+
+    #usertags img {
+        display: block;
+        margin: auto;
+        max-width: 100%;
+        max-height: 80vh;
+    }
+
+    #usertags_in {
+        display: inline;
+    }
+
+    #usertags_in img {
+        margin-bottom: 5%;
+    }
+
+
 }
 
 @media screen and (min-width: 901px) {
     #mobilenav {
         display: none;
     }
+
+    .block {
+        display: inline-block;
+        padding: 1vw;
+        min-width: 20vw;
+        max-width: 20vw;
+        min-height: 25vw;
+        max-height: 25vw;
+        vertical-align: top;
+    }
+
+    .block img {
+        max-height: 20vw;
+        max-width: 20vw;;
+    }
+
+    .block img:hover {
+        opacity: .8;
+    }
+
+    #usertags {
+        width: 70%;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
+    #usertags img {
+        display: block;
+        margin: auto;
+        max-width: 100%;
+        max-height: 80vh;
+    }
+
+    #usertags_in {
+        display: inline;
+    }
+
+    #usertags_in img {
+        margin-bottom: 5%;
+    }
+
+
 }

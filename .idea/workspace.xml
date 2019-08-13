@@ -3,14 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b60e1956-ed54-4868-b334-310cf798de02" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addpictures/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/addpictures/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/alltags/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/alltags/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gallery.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/gallery.sqlite" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/main/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mypictures/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/mypictures/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pictures/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/pictures/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -68,7 +61,7 @@
       <workItem from="1565482528934" duration="4224000" />
       <workItem from="1565726486518" duration="42000" />
       <workItem from="1565726624452" duration="679000" />
-      <workItem from="1565727915389" duration="2626000" />
+      <workItem from="1565727915389" duration="3074000" />
     </task>
     <servers />
   </component>

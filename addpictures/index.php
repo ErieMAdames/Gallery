@@ -191,7 +191,7 @@ else{ ?>
             <input type="file" name="upic" required>
         </li>
         <li>
-            <button id = "buttonbutton" name="upload" type="submit">Upload</button>
+            <button id="buttonbutton" name="upload" type="submit">Upload</button>
         </li>
     </ul>
     <?php } ?>

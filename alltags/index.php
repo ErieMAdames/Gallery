@@ -87,7 +87,7 @@ include('../includes/init.php'); ?>
                     <li>
                         <a href="../logout.php">Log out</a>
                     </li>
-                <?php }  else { ?>
+                <?php } else { ?>
                     <li>
                         <a href="../">Sign In</a>
                     </li> <?php } ?>

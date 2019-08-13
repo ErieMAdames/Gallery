@@ -1,7 +1,7 @@
 <?php
 $page = "base";
 include('includes/init.php');
-if ($redirect or $current_-user) {
+if ($redirect or $current_ - user) {
     header('location: /main');
 }
 ?>
