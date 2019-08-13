@@ -22,7 +22,7 @@ if ($redirect or $current_user) {
             <input type="text" placeholder="username" name="username" required/>
             <input type="password" placeholder="password" name="password" required/>
             <button name="login" type="submit">Log In</button>
-            <a class="message" href="/main">Continue without signing in</a>
+            <a class="message" href="https://radiant-citadel-46031.herokuapp.com/main">Continue without signing in</a>
         </form>
     </div>
     <?php print_messages(); ?>
