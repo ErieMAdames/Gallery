@@ -2,7 +2,7 @@
 $page = "base";
 include('includes/init.php');
 if ($redirect or $current_user) {
-    header('location: /main');
+    header('location: https://radiant-citadel-46031.herokuapp.com/main');
 }
 ?>
 <!DOCTYPE html>
