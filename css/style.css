@@ -134,7 +134,7 @@ header {
     border-bottom: solid;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 800px) {
     #nav {
         display: none;
     }
@@ -193,7 +193,7 @@ header {
 
 }
 
-@media screen and (min-width: 901px) {
+@media screen and (min-width: 801px) {
     #mobilenav {
         display: none;
     }
