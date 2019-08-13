@@ -172,3 +172,32 @@ textarea {
 header {
     border-bottom: solid;
 }
+
+@media screen and (max-width: 900px) {
+    #nav {
+        display: none;
+    }
+    #myLinks {
+        display: none;
+    }
+
+    #mobilenav a.icon {
+        display: block;
+        float: right;
+    }
+
+    #mobilenav h1 {
+        display: inline;
+    }
+
+    #mobilenav a {
+        display: block;
+        padding-left: 3%;
+    }
+}
+
+@media screen and (min-width: 901px) {
+    #mobilenav {
+        display: none;
+    }
+}

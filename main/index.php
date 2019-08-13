@@ -7,12 +7,54 @@ include('../includes/init.php'); ?>
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <link rel="stylesheet" type="text/css" href="../style.css" media="all"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css" media="all"/>
 
     <title>Home</title>
 </head>
 <body>
 <header id="header">
+    <nav id="mobilenav">
+        <?php
+        if ($current_user) {
+        echo("<h1>$first_n $last_n</h1>");
+        ?>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+        <div id="myLinks">
+            <a href="../mypictures">My Pictures</a>
+            <?php
+            } else { ?>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+            <h1>John Doe</h1>
+            <div id="myLinks">
+                <?php
+                }
+                ?>
+                <a href="">All Pictures</a>
+                <a href="../alltags">All Tags</a>
+                <?php
+                if ($current_user) {
+                    ?>
+                    <a href="../addpictures">Add Pictures</a>
+                    <a href="../logout.php">Log out</a>
+                <?php } else { ?>
+                    <a href="../">Sign In</a><?php } ?>
+            </div>
+            <script>
+                function myFunction() {
+                    var x = document.getElementById("myLinks");
+                    if (x.style.display === "block") {
+                        x.style.display = "none";
+                    } else {
+                        x.style.display = "block";
+                    }
+                }
+            </script>
+    </nav>
     <nav id="nav">
         <?php
         if ($current_user) {
