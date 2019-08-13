@@ -180,7 +180,7 @@ if ($picture['first_name']) {
                 <input type="hidden" name="pictitle" value="<?php echo($title); ?>"/>
                 <input type="hidden" name="deletetag" value="deletetag"/>
                 <?php
-                echo("<a href = 'alltags?tag=$tag'>$tag</a>");
+                echo("<a href = '../alltags?tag=$tag'>$tag</a>");
                 ?>
                 <button id="tagdeleter">✕</button>
             </form>
@@ -190,7 +190,7 @@ if ($picture['first_name']) {
         echo("</div>");
     } else {
         foreach ($tags as $tag => $tagid) {
-            echo("<a class = 'dtag' href = 'alltags?tag=$tag'>$tag</a>");
+            echo("<a class = 'dtag' href = '../alltags?tag=$tag'>$tag</a>");
         }
         echo("</div>");
         echo("</div>");
