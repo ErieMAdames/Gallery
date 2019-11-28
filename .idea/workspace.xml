@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b60e1956-ed54-4868-b334-310cf798de02" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/addpictures/delete.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/alltags/delete.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/delete.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mypictures/delete.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pictures/delete.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,10 +31,17 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/addpictures" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Erie M. Adames\Documents\Resume site\Gallery\addpictures" />
+      <recent name="C:\Users\Erie M. Adames\Documents\Resume site\Gallery\alltags" />
+      <recent name="C:\Users\Erie M. Adames\Documents\Resume site\Gallery\pictures" />
+      <recent name="C:\Users\Erie M. Adames\Documents\Resume site\Gallery\mypictures" />
+      <recent name="C:\Users\Erie M. Adames\Documents\Resume site\Gallery\main" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Erie M. Adames\Documents\Resume site\Gallery\css" />
     </key>
@@ -62,7 +73,8 @@
       <workItem from="1565726486518" duration="42000" />
       <workItem from="1565726624452" duration="679000" />
       <workItem from="1565727915389" duration="5268000" />
-      <workItem from="1565735639265" duration="4352000" />
+      <workItem from="1565735639265" duration="4453000" />
+      <workItem from="1574927815353" duration="163000" />
     </task>
     <servers />
   </component>
