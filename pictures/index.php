@@ -172,7 +172,7 @@ if ($picture['first_name']) {
     echo("<div id = 'usertags'><div id = 'usertags_in'><img src='$path' alt='$title'></div><div class = 'usertags_in'>");
     if (($userid == $user) and isset($userid) and isset($user)) {
         foreach ($tags as $tag => $tagid) { ?>
-            <form class="dtag" action="delete.php" method="post">
+            <form class="dtag" action="../delete.php" method="post">
                 <input type="hidden" name="user_id" value="<?php echo($userid); ?>"/>
                 <input type="hidden" name="picid" value="<?php echo($id); ?>"/>
                 <input type="hidden" name="tag" value="<?php echo($tag); ?>"/>
@@ -214,7 +214,7 @@ if ($picture['first_name']) {
 if (($userid == $user) and isset($userid) and isset($user)) {
     ?>
     <div class="deleteform">
-    <form action="delete.php" method="post">
+    <form action="../delete.php" method="post">
         <input type="hidden" name="user_id" value="<?php echo($userid); ?>"/>
         <input type="hidden" name="picid" value="<?php echo($id); ?>"/>
         <input type="hidden" name="pictitle" value="<?php echo($title); ?>"/>
