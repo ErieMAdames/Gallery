@@ -1,6 +1,5 @@
 <?php
 $page = "base";
-header("location: ../pictures?id=$id&title=$title");
 include('../includes/init.php');
 if (($_POST['user_id'] == $userid) and ($_POST['deletetag'] == 'deletetag')) {
     $id = filter_input(INPUT_POST, "picid", FILTER_SANITIZE_STRING);
